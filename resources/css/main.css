@@ -6,9 +6,14 @@ Kyle Lehmann
 lehmannkylej@gmail.com
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/* BREAKPOINT:
+@media (min-width: 992px) {}
+@media (max-width: 991.98px) {}
+*/
 
 /* GLOBALS */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 :root {
   --blue-lt: #71A1D5;
   --blue-dk: #295675;
@@ -16,6 +21,12 @@ lehmannkylej@gmail.com
   --yellow: #F5AF18;
   --red: #C71C3B;
 }
+
+button, button:focus, button:hover {
+  outline: none;
+}
+
+
 
 /* NAV BAR */
 .navbar {
@@ -30,23 +41,42 @@ lehmannkylej@gmail.com
   background-size: contain;
   background-image: url("../img/gatlogo-dark.svg");
 }
-.navbar-brand:hover {
+
+.navbar-brand:hover, .navbar-brand:focus {
   background-image: url("../img/gatlogo-dark-hover.svg")
 }
 
 .navbar-nav a {
+  font-size: 16px;
   color: #FFF;
-  font-size: 22px;
 }
 
-.navbar-nav > li{
-  padding: 0 1.25rem 0 1.25rem;
+.navbar-nav a:hover, .navbar-nav a:focus, .navbar-nav a:active {
+  color: var(--yellow);
+  text-decoration: underline;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav > li{
+    margin-top: .10rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-nav > li:first-of-type {
+    margin-top: 1rem;
+  }
+  .navbar-nav > li{
+    padding: .5rem 0 .25rem 0;
+  }
 }
 
 .navbar-toggler {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   padding: 0;
+  margin-top: .5rem;
 }
 
 .navbar-toggler-icon {
@@ -56,9 +86,11 @@ lehmannkylej@gmail.com
   background-image: url("../img/menu-circle.svg") !important;
 }
 
-.navbar-toggler-icon:hover {
+.navbar-toggler-icon:hover, .navbar-toggler-icon:focus, .navbar-toggler-icon:active {
   background-image: url("../img/menu-circle-hover.svg") !important;
 }
+
+
 
 /* BODY */
 body {
