@@ -1,0 +1,56 @@
+/*
+MAIN CSS STYLES
+used with Bootstrap
+
+Kyle Lehmann
+lehmannkylej@gmail.com
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* GLOBALS */
+:root {
+  --blue-lt: #71A1D5;
+  --blue-dk: #295675;
+  --gray: #C7CFD6;
+  --yellow: #F5AF18;
+  --red: #C71C3B;
+}
+
+/* NAV BAR */
+.navbar {
+  margin-top: 1rem;
+  font-family: 'Jost', sans-serif;
+}
+
+.navbar-brand > img {
+  width: 20rem;
+  height: auto;
+}
+
+.navbar-nav a {
+  color: #FFF;
+  font-size: 22px;
+}
+
+.navbar-nav > li{
+  padding: 0 1.25rem 0 1.25rem;
+}
+
+.navbar-toggler {
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+}
+
+.navbar-toggler-icon {
+  width: inherit;
+  height: inherit;
+  background-size: contain;
+  background-image: url('../img/menu-circle.svg') !important;
+}
+
+/* BODY */
+body {
+  background-color: var(--blue-dk);
+}
