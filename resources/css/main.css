@@ -23,9 +23,15 @@ lehmannkylej@gmail.com
   font-family: 'Jost', sans-serif;
 }
 
-.navbar-brand > img {
-  width: 20rem;
-  height: auto;
+.navbar-brand {
+  height: 6rem;
+  width: 17rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/gatlogo-dark.svg");
+}
+.navbar-brand:hover {
+  background-image: url("../img/gatlogo-dark-hover.svg")
 }
 
 .navbar-nav a {
@@ -47,7 +53,11 @@ lehmannkylej@gmail.com
   width: inherit;
   height: inherit;
   background-size: contain;
-  background-image: url('../img/menu-circle.svg') !important;
+  background-image: url("../img/menu-circle.svg") !important;
+}
+
+.navbar-toggler-icon:hover {
+  background-image: url("../img/menu-circle-hover.svg") !important;
 }
 
 /* BODY */
