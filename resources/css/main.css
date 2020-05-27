@@ -48,7 +48,7 @@ body {
 
 /* GRID */
 .container {
-  padding-bottom:30px;
+  padding-bottom: 30px;
 }
 
 .row:not(:last-of-type) {
