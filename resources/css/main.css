@@ -6,9 +6,20 @@ Kyle Lehmann
 lehmannkylej@gmail.com
 */
 
-/* BREAKPOINT:
+/* BREAKPOINTS:
+
+@media (max-width: 575.98px) {}
+@media (min-width: 576px) {}
+
+@media (max-width: 767.98px) {}
+@media (min-width: 768px) {}
+
 @media (min-width: 992px) {}
 @media (max-width: 991.98px) {}
+
+@media (max-width: 1199.98px) {}
+@media (min-width: 1200px) {}
+
 */
 
 /* GLOBALS */
@@ -20,10 +31,71 @@ lehmannkylej@gmail.com
   --gray: #C7CFD6;
   --yellow: #F5AF18;
   --red: #C71C3B;
+  --green: #23CC5F;
 }
 
 button, button:focus, button:hover {
   outline: none;
+}
+
+/* BODY */
+body {
+  background-color: var(--blue-dk);
+  font-family: 'Jost', sans-serif;
+}
+
+/*---------*/
+
+
+/* BUTTONS */
+.button {
+  padding: .5rem 1rem;
+  font-size: 18px;
+  border: none;
+  border-radius: 32px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.button:hover, .button:active, .button:focus {
+  background-color: var(--green);
+  color: #fff;
+}
+
+.button-apt {
+  margin-top: 7rem;
+  background-color: var(--yellow);
+  color: #000;
+}
+
+
+
+/* CARDS */
+.card {
+  border: none;
+  border-radius: .5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.card-photo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  height: 20rem;
+}
+
+.card-photo-h1, .card-photo-h2 {
+  text-align: center;
+  text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.card-photo-h1 {
+  font-size: 32px;
+  padding: 3rem 0 0 0;
+}
+
+.card-photo-h2 {
+  font-size: 18px;
+  padding: .25rem 0 0 0;
 }
 
 
@@ -31,7 +103,6 @@ button, button:focus, button:hover {
 /* NAV BAR */
 .navbar {
   margin-top: 1rem;
-  font-family: 'Jost', sans-serif;
 }
 
 .navbar-brand {
@@ -47,29 +118,27 @@ button, button:focus, button:hover {
 }
 
 .navbar-nav a {
-  font-size: 16px;
   color: #FFF;
 }
 
 .navbar-nav a:hover, .navbar-nav a:focus, .navbar-nav a:active {
-  color: var(--yellow);
+  color: var(--green);
   text-decoration: underline;
 }
 
+@media (max-width: 991.98px) {
+  .navbar-nav > li{
+    padding: .5rem 0 .25rem 0;
+    font-size: 22px;
+    text-align: right;
+  }
 @media (min-width: 992px) {
   .navbar-nav > li{
     margin-top: .10rem;
-    padding: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 20px;
   }
 }
-
-@media (max-width: 991.98px) {
-  .navbar-nav > li:first-of-type {
-    margin-top: 1rem;
-  }
-  .navbar-nav > li{
-    padding: .5rem 0 .25rem 0;
-  }
 }
 
 .navbar-toggler {
@@ -92,7 +161,9 @@ button, button:focus, button:hover {
 
 
 
-/* BODY */
-body {
-  background-color: var(--blue-dk);
+/* TEST CSS -- transfer to docs*/
+.card-photo-test {
+  background-position: right;
+  background-image: url("../img/menutest.jpg") !important;
+  color: #000;
 }
