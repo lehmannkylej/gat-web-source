@@ -48,7 +48,7 @@ body {
 
 /* GRID */
 .container {
-  padding-bottom: 30px;
+  padding-bottom: 30px !important;
 }
 
 .row:not(:last-of-type) {
@@ -199,14 +199,12 @@ iframe {
 
 /* NAV BAR */
 .navbar-brand {
-  height: 6rem;
-  width: 17rem;
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url("../img/gatlogo-dark.svg");
 }
 
-.navbar-brand:hover, .navbar-brand:focus {
+.navbar-brand-container:hover, .navbar-brand-container:focus {
   background-image: url("../img/gatlogo-dark-hover.svg")
 }
 
@@ -220,6 +218,10 @@ iframe {
 }
 
 @media (max-width: 991.98px) {
+  .navbar-brand {
+    width: 12rem;
+    height: 4.03rem;
+  }
   .navbar-nav > li{
     padding: .5rem 0 .25rem 0;
     font-size: 22px;
@@ -230,8 +232,20 @@ iframe {
   }
 }
 @media (min-width: 992px) {
+  .navbar-brand {
+    margin-top: 1rem;
+    width: 18rem;
+    height: 5.71rem;
+  }
+  .navbar {
+    position: relative;
+  }
+  .navbar-nav {
+      position: absolute;
+      bottom: 0;
+      right: 16px;
+  }
   .navbar-nav > li{
-    margin-top: .10rem;
     padding: 0 0 0 1.5rem;
     font-size: 20px;
   }
