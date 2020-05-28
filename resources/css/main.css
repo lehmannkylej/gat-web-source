@@ -204,7 +204,7 @@ iframe {
   background-image: url("../img/gatlogo-dark.svg");
 }
 
-.navbar-brand-container:hover, .navbar-brand-container:focus {
+.navbar-brand:hover, .navbar-brand:focus {
   background-image: url("../img/gatlogo-dark-hover.svg")
 }
 
