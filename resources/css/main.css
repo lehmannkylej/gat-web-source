@@ -24,6 +24,7 @@ BREAKPOINTS:
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 :root {
+  /* GLOBAL COLORS */
   --blue-lt: #71A1D5;
   --blue-dk: #295675;
   --gray: #ACBAA9;
@@ -124,10 +125,12 @@ CUSTOM STYLES
 
 /* BUTTONS */
 .button {
-  padding: .25rem .75rem;
+  padding: .35rem .5rem .25rem .5rem;
   font-size: 14px;
+  font-family: 'Hind', sans-serif;
+  font-weight: 600;
   border: none;
-  border-radius: 48px;
+  border-radius: 4px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
@@ -149,6 +152,11 @@ CUSTOM STYLES
 .button-red {
   background-color: var(--red);
   color: #fff;
+}
+
+.button-gray {
+  background-color: var(--gray);
+  color: #000;
 }
 
 
