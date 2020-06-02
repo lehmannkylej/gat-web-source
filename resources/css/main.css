@@ -197,7 +197,7 @@ iframe {
 
 
 /* FOOTER */
-footer, h6 {
+footer {
   font-size: 12px;
 }
 
@@ -234,11 +234,8 @@ footer ul > ul a {
 }
 
 h6 {
-  display: inline-block;
   margin: 1rem 0 0 0;
-  border-bottom: solid 1px var(--gray);
   padding: 2px 0;
-  color: var(--gray);
 }
 
 footer i {
@@ -254,7 +251,7 @@ footer a:hover i, footer a:focus i {
   color: var(--green);
 }
 
-footer p {
+footer p, h6 {
   color: #fff;
 }
 
