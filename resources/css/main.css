@@ -1,22 +1,19 @@
-/*
+/***
 MAIN CSS STYLES
 used with Bootstrap
 
 Kyle Lehmann
 lehmannkylej@gmail.com
-*/
 
-/* BREAKPOINTS:
+LOGO ratio 378.92 / 1129.02
 
+BREAKPOINTS:
 @media (max-width: 575.98px) {}
 @media (min-width: 576px) {}
-
 @media (max-width: 767.98px) {}
 @media (min-width: 768px) {}
-
 @media (min-width: 992px) {}
 @media (max-width: 991.98px) {}
-
 @media (max-width: 1199.98px) {}
 @media (min-width: 1200px) {}
 
@@ -29,7 +26,7 @@ lehmannkylej@gmail.com
 :root {
   --blue-lt: #71A1D5;
   --blue-dk: #295675;
-  --gray: #C7CFD6;
+  --gray: #ACBAA9;
   --yellow: #F5AF18;
   --red: #C71C3B;
   --green: #23CC5F;
@@ -45,20 +42,13 @@ body {
   font-family: 'Jost', sans-serif;
 }
 
-
 /* GRID */
-.container {
-  padding-bottom: 30px !important;
-}
-
-.row:not(:last-of-type) {
+.col {
   margin-bottom: 30px;
 }
 
-@media (max-width: 767.98px) {
-  .col-md:not(:last-of-type) {
-    margin-bottom: 30px;
-  }
+.col-md {
+  margin-bottom: 30px;
 }
 
 /* GENERAL TEXT STYLES */
@@ -66,7 +56,12 @@ a, address {
   color: var(--blue-lt);
 }
 
-a:hover {
+a.active {
+  color: var(--yellow) !important;
+
+}
+
+a:hover, a:focus {
   color: var(--green);
 }
 
@@ -88,17 +83,32 @@ dd:last-of-type, dl:last-of-type {
   margin-bottom: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  text-align: center;
+h1, h2, h3, h4, h5 {
+  text-align: center
+}
+
+h1, h2 {
+  font-family: 'Jost', sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 32px;
 }
 
 h2, h3 {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 18px;
 }
 
 h3 {
+  margin: 0 0 .5rem 0;
   font-family: 'Hind', sans-serif;
+  font-weight: bold;
+}
+
+i {
+  color: #000;
+  margin: 0 8px 0 0;
 }
 
 p:last-of-type {
@@ -107,18 +117,21 @@ p:last-of-type {
 
 
 
-
+/*************
+CUSTOM STYLES
+(alphabetical)
+*************/
 
 /* BUTTONS */
 .button {
-  padding: .5rem .8rem;
-  font-size: 18px;
+  padding: .25rem .75rem;
+  font-size: 14px;
   border: none;
   border-radius: 48px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
-.button:hover, .button:active, .button:focus {
+.button:hover, .button:focus {
   background-color: var(--green);
   color: #fff;
 }
@@ -152,27 +165,13 @@ p:last-of-type {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: transparent;
-  height: 20rem;
+  min-height: 5rem;
   text-align: center;
+  padding: 2rem;
 }
 
-.card-photo h1, .card-photo h2 {
+.card-photo h1, h2 {
   text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-}
-
-.card-photo h1 {
-  font-size: 32px;
-  padding: 2rem 0 0 0;
-}
-
-.card-photo h2 {
-  font-size: 18px;
-  font-weight: 400;
-  padding: .25rem 0 0 0;
-}
-
-.card-photo button {
-  margin-top: 8rem;
 }
 
 .card-map {
@@ -197,8 +196,80 @@ iframe {
 
 
 
+/* FOOTER */
+footer, h6 {
+  font-size: 12px;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+footer ul > ul {
+  margin: 0 0 0 1rem;
+}
+
+footer div > ul > li {
+  margin: 1rem 0 0 0;
+}
+
+footer ul > li {
+  color: var(--gray);
+}
+
+footer ul > li > a, footer ul > li > address {
+  color: #fff;
+  display: inline-block;
+}
+
+footer ul > ul li {
+  margin: .5rem 0 0 0;
+}
+
+footer ul > ul a {
+  color: var(--gray);
+  font-weight: normal;
+}
+
+h6 {
+  display: inline-block;
+  margin: 1rem 0 0 0;
+  border-bottom: solid 1px var(--gray);
+  padding: 2px 0;
+  color: var(--gray);
+}
+
+footer i {
+  color: #fff;
+  margin: 0 8px;
+}
+
+footer ul > ul i {
+  color: var(--gray);
+}
+
+footer a:hover i, footer a:focus i {
+  color: var(--green);
+}
+
+footer p {
+  color: #fff;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+
 /* NAV BAR */
 .navbar-brand {
+  margin-top: 1rem;
+  margin-right: 0;
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url("../img/gatlogo-dark.svg");
@@ -212,9 +283,16 @@ iframe {
   color: #FFF;
 }
 
-.navbar-nav a:hover, .navbar-nav a:focus, .navbar-nav a:active {
+.navbar-nav a:hover, .navbar-nav a:focus {
   color: var(--green);
   text-decoration: underline;
+}
+
+@media (max-width: 575.98px) {
+  .navbar-brand {
+    width: 1rem;
+    height: 3.36rem;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -222,30 +300,26 @@ iframe {
     width: 12rem;
     height: 4.03rem;
   }
-  .navbar-nav > li{
+  .navbar-nav li{
     padding: .5rem 0 .25rem 0;
     font-size: 22px;
     text-align: right;
   }
-  .navbar-nav > li:last-of-type {
+  .navbar-nav li:last-of-type {
     margin-bottom: 1.5rem;
   }
 }
 @media (min-width: 992px) {
   .navbar-brand {
-    margin-top: 1rem;
     width: 18rem;
     height: 5.71rem;
   }
-  .navbar {
-    position: relative;
-  }
   .navbar-nav {
-      position: absolute;
-      bottom: 0;
-      right: 16px;
+    position: absolute;
+    bottom: 0;
+    right: 16px;
   }
-  .navbar-nav > li{
+  .navbar-nav li{
     padding: 0 0 0 1.5rem;
     font-size: 20px;
   }
@@ -255,24 +329,20 @@ iframe {
 .navbar-toggler {
   width: 2.5rem;
   height: 2.5rem;
+  padding: 0;
+  margin: 30px 0 0 0 !important;
+  border: none;
 }
 
 .navbar-toggler-icon {
-  width: inherit;
-  height: inherit;
-  background-size: contain;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.navbar-toggler-icon {
   background-image: url("../img/menu-circle.svg") !important;
 }
 
-.navbar-toggler-icon:hover, .navbar-toggler-icon:focus, .navbar-toggler-icon:active {
+.navbar-toggler-icon:hover, .navbar-toggler-icon:active, .navbar-toggler-icon:focus {
   background-image: url("../img/menu-circle-hover.svg") !important;
-}
-
-
-
-/* TEST CSS -- transfer to docs*/
-.card-photo-test {
-  background-position: right;
-  background-image: url("../img/menutest.jpg") !important;
-  color: #000;
 }
