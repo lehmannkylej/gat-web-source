@@ -39,7 +39,7 @@ button, button:focus, button:hover {
 
 /* BODY */
 body, .container {
-  background-color: var(--blue-dk) !important;
+  background-color: #295675 !important;
   font-family: 'Jost', sans-serif;
 }
 
