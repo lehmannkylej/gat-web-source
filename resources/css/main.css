@@ -56,16 +56,16 @@ body, .container {
 
 /* GENERAL TEXT STYLES */
 a, address {
-  color: var(--blue-lt);
+  color: #71A1D5;
 }
 
 a.active {
-  color: var(--yellow) !important;
+  color: #F5AF18 !important;
 
 }
 
 a:hover, a:focus {
-  color: var(--green);
+  color: #23CC5F;
 }
 
 dd {
@@ -137,7 +137,7 @@ CUSTOM STYLES
 }
 
 .button:hover, .button:focus {
-  background-color: var(--green);
+  background-color: #23CC5F;
   color: #fff;
 }
 
@@ -147,17 +147,17 @@ CUSTOM STYLES
 }
 
 .button-yellow {
-  background-color: var(--yellow);
+  background-color: #F5AF18;
   color: #000;
 }
 
 .button-red {
-  background-color: var(--red);
+  background-color: #C71C3B;
   color: #fff;
 }
 
 .button-gray {
-  background-color: var(--gray);
+  background-color: #ACBAA9;
   color: #000;
 }
 
@@ -226,7 +226,7 @@ footer div > ul > li {
 }
 
 footer ul > li {
-  color: var(--gray);
+  color: #ACBAA9;
 }
 
 footer ul > li > a, footer ul > li > address {
@@ -239,7 +239,7 @@ footer ul > ul li {
 }
 
 footer ul > ul a {
-  color: var(--gray);
+  color: #ACBAA9;
   font-weight: normal;
 }
 
@@ -254,11 +254,11 @@ footer i {
 }
 
 footer ul > ul i {
-  color: var(--gray);
+  color: #ACBAA9;
 }
 
 footer a:hover i, footer a:focus i {
-  color: var(--green);
+  color: #23CC5F;
 }
 
 footer p, h6 {
@@ -291,7 +291,7 @@ footer ul {
 }
 
 .navbar-nav a:hover, .navbar-nav a:focus {
-  color: var(--green);
+  color: #23CC5F;
   text-decoration: underline;
 }
 
