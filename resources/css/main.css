@@ -38,7 +38,7 @@ button, button:focus, button:hover {
 }
 
 /* BODY */
-body {
+body, .container {
   background-color: var(--blue-dk) !important;
   font-family: 'Jost', sans-serif;
 }
