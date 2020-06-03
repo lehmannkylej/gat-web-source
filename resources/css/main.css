@@ -132,7 +132,9 @@ CUSTOM STYLES
   font-family: 'Hind', sans-serif;
   font-weight: 600;
   border: none;
-  border-radius: 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
@@ -167,7 +169,9 @@ CUSTOM STYLES
 .card {
   border: none;
   padding: 1.25rem;
-  border-radius: .5rem;
+  -moz-border-radius: .5rem .5rem .5rem .5rem;
+  -webkit-border-radius: .5rem .5rem .5rem .5rem;
+  border-radius: .5rem .5rem .5rem .5rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
