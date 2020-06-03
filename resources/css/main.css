@@ -44,12 +44,14 @@ body {
 }
 
 /* GRID */
-.col {
+.col, .col-md, .col-sm {
   margin-bottom: 30px;
 }
 
-.col-md {
-  margin-bottom: 30px;
+@media (max-width: 575.98px) {
+  .col, .col-md {
+    margin-bottom: 15px;
+  }
 }
 
 /* GENERAL TEXT STYLES */
