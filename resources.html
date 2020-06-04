@@ -8,24 +8,36 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Resources •`` Grace & Truth Christian Counseling</title>
+  <title>Resources • Grace & Truth Christian Counseling</title>
 
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="resources/css/main.css">
   <style>
   .splash {
-    color: #000;
-    background: bottom url("resources/img/resources.jpg") !important;
+    color: #fff;
+    background: center url("resources/img/resources.jpg") !important;
     background-size: cover !important;
-    height: 18rem;
-    padding: 3rem 2rem;
+    height: 100%;
   }
 
+  #text-ice {
+    text-align: center;
+    font-size: 12px;
+    margin: 1rem 0 0 0;
+  }
+ /*
   @media (max-width: 991.98px) {
+    .splash {
+      height: 6.5rem;
+    }
     .splash-head {
       font-size: 24px;
     }
+    .splash-subhead {
+      font-size: 14px;
+    }
   }
+  */
   </style>
 
   <script src="https://kit.fontawesome.com/acc4a4e548.js" crossorigin="anonymous"></script>
@@ -67,10 +79,21 @@
     </nav>
 
     <div class="row">
-      <div class="col">
+      <div class="col-md">
         <div class="card splash">
-          <div class="splash-head">RESOURCES</div>
-          <div class="splash-subhead">SPLASH SUBHEADER</div>
+          <div class="splash-head m-auto">RESOURCES</div>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="card">
+          <h1>EMERGENCY SERVICES*</h1>
+          <h2><i class="fas fa-phone fa-rotate-90"></i>Phone</h2>
+          <a href="tel:1-314-602-7959">(314) 602 - 7959</a>
+          <h2><i class="fas fa-envelope"></i>Email</h2>
+          <a href="mailto:gandtcc@gmail.com">gandtcc@gmail.com</a>
+          <h2><i class="fas fa-map-pin"></i>Address</h2>
+          <address class="mb-0">12882 Manchester Rd.<br />Suite 204<br />Des Peres, MO 63131</address>
+          <span id="text-ice">In case of emergency, please call 911 or go to your nearest emergency room.</span>
         </div>
       </div>
     </div>
