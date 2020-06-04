@@ -68,45 +68,39 @@ a:hover, a:focus {
   color: #23CC5F;
 }
 
-dd {
-  margin-bottom: 1rem;
-}
-
-dt {
-  font-family: 'Hind', sans-serif;
-  font-weight: 600;
-  margin-top: .5rem;
-}
-
-dt:first-of-type {
-  margin-top: 0;
-}
-
-dd:last-of-type, dl:last-of-type {
-  margin-bottom: 0;
-}
-
-h1, h2, h3, h4, h5 {
-  text-align: center
-}
-
-h1, h2 {
+.splash {
   font-family: 'Jost', sans-serif;
   font-weight: normal;
+  text-align: center;
+  text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
-h1 {
+.splash-head {
   font-size: 32px;
 }
 
-h2, h3 {
+.splash-subhead {
   font-size: 18px;
 }
 
-h3 {
-  margin: 0 0 .5rem 0;
+h1 {
+  font-size: 16px;
+  margin: 0 0 1.5rem 0;
   font-family: 'Hind', sans-serif;
   font-weight: bold;
+  text-align: center;
+}
+
+
+h2 {
+  font-family: 'Hind', sans-serif;
+  font-weight: 600;
+  font-size: 16px !important;
+  margin: 0 0 .5rem 0;
+}
+
+h2:not(:first-of-type) {
+  margin-top: 1.5rem;
 }
 
 i {
@@ -175,17 +169,12 @@ CUSTOM STYLES
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
-.card-photo {
+.splash {
   background-repeat: no-repeat;
-  background-size: cover;
   background-color: transparent;
   min-height: 5rem;
   text-align: center;
   padding: 2rem;
-}
-
-.card-photo h1, h2 {
-  text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
 .card-map {
@@ -231,6 +220,10 @@ footer div > ul > li {
 
 footer ul > li {
   color: #ACBAA9;
+}
+
+.map-active a, .map-active i {
+  color: #F5AF18 !important;
 }
 
 footer ul > li > a, footer ul > li > address {
